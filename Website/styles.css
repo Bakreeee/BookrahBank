@@ -1,0 +1,564 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    align-items: center;
+    background-color: #f9e9c5;
+    
+    display: flex;
+    border-radius: 10px;
+}
+.tittle{
+    text-align: center;
+}
+
+.logo{
+    margin-right: 20px;
+    height: auto;
+    width: 50px;
+}
+
+.navBar{
+    overflow: hidden;
+    background-color: #ffeec6;
+}
+
+.navBar ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navBar li{
+    float: left;
+    
+}
+
+.navBar li a{
+    text-align: center;
+    padding: 16px 18px;
+    color:black;
+    display: block;
+    text-decoration: none;
+}
+
+.navBar li a:hover{
+    background-color: wheat;
+}
+
+@media screen and (max-width: 700px) {
+    .navBar li{
+        visibility:hidden ;
+        list-style-type: none;
+
+    }
+    
+    .navBar .icon{
+        cursor: pointer;
+        padding: 16px 18px 16px 18px;
+        color: black;
+        display: block;
+    }
+   
+    
+    .navBar ul {
+        flex-direction: column;
+        display: none;
+
+    }
+    
+    .navBar.responsive ul{
+        display: block;
+    }
+    
+    .icon{
+        font-size: 24px;
+        cursor:pointer;
+        
+    }
+}
+
+@media  (min-width: 701px) {
+    .navBar .icon{
+        display: none;
+    }
+
+    .navBar.responsive ul{
+        display: flex;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+.heroSec{
+    background-image: url("image/hero.jpeg");
+    background-position: center;
+    background-size:cover;
+    height: 75vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    color: white;
+}
+
+.heroSec h1 {
+    font-size:3rem;
+    margin-bottom:20px;
+
+
+}
+.heroSec h1:hover{
+    transform: scale(1.75);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.heroSec p{
+    font-size:1.5rem;
+    margin-bottom:1.25rem;
+}
+.heroSec p:hover{
+    transform: scale(1.25);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.heroSec .but{
+    background-color: #f9e9c5;
+    padding:  10px  20px;
+    border-radius: 10px;
+    font-size: 2rem;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    transform: scale(1.5);
+
+    
+}
+.heroSec .but:hover{
+    background-color: wheat;
+    color: white;
+}
+.footer-bottom{
+    position: relative;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    background-color: #f9e9c5;
+    padding: 10px 0;
+    text-align: left;
+    color: black;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+}
+
+
+.about-card{
+    margin: 20px;
+   
+    box-shadow: none;
+    margin:auto;
+    border-color: black;
+}
+
+.about-card h1{
+    font-size: 2rem;
+    text-align: center;
+}
+.about-card p{
+    font-size: 1rem;
+    text-align:center;
+
+}
+.about-card h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.aboutSec{
+    padding: 20px;
+    border: 30px;
+}
+
+.card0{
+    display: relative;
+    float: top;
+    width: auto;
+    padding:20px;
+    border-color: black;
+    margin:auto;
+    overflow: hidden;
+    background-color: #ffeec6;
+    border-radius: 10px;
+    border: 2px solid;
+    margin-bottom: 20px;
+}
+
+.card1, .card2, .card3{
+    flex: 1;
+   
+    padding:20px;
+    border-color: black;
+    border:  2px solid;
+    box-sizing: border-box;    
+    background-color: #ffeec6;
+    border-radius: 10px;
+    gap:20px;
+   
+}
+
+.aboutsec-row{
+    justify-content:space-between;
+    display: flex;
+    gap: 20px;
+}
+
+
+.card0 img{
+    max-width: 100%;
+    height: 300px;
+    width: 300px;
+    float: right;
+    display: block;
+    margin: 10px;
+    border: 2px solid;
+    border-color: black;
+}
+
+
+.productItem{
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+ max-width: 300px;
+ margin: auto;
+ text-align: center; 
+ box-sizing: border-box;
+ border-radius: 5px;
+ border: 2px solid;
+ overflow: hidden;
+
+}
+
+.productItem:hover{
+    transform: scale(1.1);
+}
+
+.productItem button{
+    outline: 0;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    background-color:#f9e9c5;
+    cursor: pointer;
+    text-align: center;
+    width:100%;
+    float: flex;
+    text-decoration:none;
+    display: block;
+  
+}
+
+.productItem img{
+    width: 300px;
+    height: 300px;
+}
+.productItem button :hover{
+    background-color: wheat;
+    
+}
+
+.serH1{
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+.productItemRow{
+    justify-content:space-between;
+    display: flex;
+    gap: 20px;
+}
+
+
+
+
+.contactpage{
+    position: relative;
+    min-height:100vh;
+    
+    
+    justify-content: auto;
+    flex-direction:column;
+    background-color: #f9e9c5;
+   
+
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    border: 4px solid;
+    border-radius: 10px;
+    max-width: 40%;
+    vertical-align: top;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 5%;
+    
+}
+
+
+.contactCont .cont{
+    max-width: 1000px;
+    text-align: center;
+}
+
+.cont .contactCont h2{
+    color: black;
+    font-size: 2rem;
+
+}
+
+.cont .contactCont h2{
+    color: black;
+    
+    font-size:1rem;
+}
+.contBox{
+    box-sizing: border-box;
+}
+.cont{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center
+
+}
+.cont .contactCont .cont .contInfo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.cont .contInfo{
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+}
+
+.contactFormBox{
+    border: 2px solid black;
+    background-color:#f9e9c5;
+    margin: 0 auto;
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+    
+    
+}
+
+
+.contactform{
+    text-align: center;
+    display: right;
+    align-items: flex-end;
+    flex-direction:column;
+    border: 4px solid;
+    border-radius: 10px;
+    max-width: 40%;
+    margin:  auto ;
+    background-color: #f9e9c5;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 5%;
+
+}
+
+
+.inputBox{
+    padding: 10px;
+    border: 1px ;
+    box-sizing: border-box;
+    
+    color: black;
+    background-color: #f9e9c5;
+    font-size:16px;
+    display: block;
+    width: 100%;
+
+}
+
+.contPage{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contHead{
+    text-align: center;
+}
+
+.accordion{
+    background-color: #f9e9c5;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    text-align: left;
+    transition: 1s;
+    outline: none;
+    text-align: center;
+    font-size:1rem;
+    
+
+
+}
+
+.accordion:hover{
+    background-color: wheat;
+}
+.accordion:active{
+    background-color: #ffeec6;
+}
+
+.pannel{
+    background-color: white;
+    display: none;
+    padding: 0 20px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.faqBox{
+    margin: 20px;
+    box-shadow: none;
+    margin:auto;
+    border-color: black;
+    box-sizing: border-box;
+    width: 60%;
+    height: auto;
+    border: 4px solid;
+    border-radius: 10px;
+    font-size: 1rem;
+
+}
+
+.faqHead{
+    text-align: center;
+    margin: 0 20px;
+}
+.faqHead h1{
+    font-size: 1.5rem;
+    font-style: bold;
+}
+.faqHead p{
+    font-size: 1rem;
+}
+
+.morgageFormBox{
+    border: 2px;
+    background-color:#f9e9c5;
+    margin: 5% 20%;
+}
+
+.MorgageCalcForm{
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+    flex-direction:column;
+    border: 1px solid;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+
+}
+
+.morinputBox{
+    padding: 10px;
+    border: 1px ;
+    box-sizing: border-box;
+    border-radius: 4px solid;
+    color: black;
+    background-color: #f9e9c5;
+    font-size:16px;
+    display: block;
+    width: 100%;
+
+}
+.morText{
+    text-align: center; 
+    margin:  0 20%;
+}
+
+
+
+.morText p{
+padding: 0 20%  ;
+}
+
+.submit{
+    size: 3rem;
+    background-color: wheat;
+    padding: 16px ;
+    border-radius: 4px;
+    font-size: 1rem;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    margin: 20px 0 0 auto;
+
+}
+
+input{
+    width: 80%;
+    margin: 20px 0;
+    padding: 10px;
+    align-items: center;
+    border: 4px solid black;
+    border-radius: 10px;
+
+}
+
+input:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.94);
+    
+}
+
+.resualt{
+    background-color: #f9e9c5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    margin: auto 20%;
+    padding: 0;
+    border-radius:  10px; 
+    max-width: 400px;
+    border: 1px solid black;
+    
+    display: flex;
+    margin: 0 auto;
+    
+    flex-direction:column;
+    
+    
+    
+
+}
+
+.error{
+    color: red;
+}

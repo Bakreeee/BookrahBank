@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>mordgage calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/jquery.js"></script>
+
+
+    
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class=logo src="image/logo.png" alt="Logo"></a>
+        <h1 class="tittle">Bookra Bank</h1>
+    </header>
+    <div>
+   <nav class="navBar">
+    
+    
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="service.html">Services</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    
+</ul>
+    </nav>
+
+    <div class="morText">
+        <h2>mortgage elegability form</h2>
+        <p>use this form in order to check if you are elegable for a mortgage.</p>
+        <p>in order to be considered for a mortgage the monthly payment must not exceed 30% of your monthly income</p>
+    </div>
+    </div>
+    
+    <div class="MorgageCalcForm">
+        <form class="morgageCalculator" ;>
+        
+        <div class="morinputBox">
+            <span>What is the value of the house</span>
+            <input type="text" id="houseVal" placeholder="Enter the value of the house" >
+            
+        </div>
+    
+        <div class="morinputBox">
+            <span>What is your monthly income</span>
+            <input type="text" id="income" placeholder="Enter your monthly income">
+            
+        </div>
+    
+        <div class="morinputBox">
+            <span>How many years do you want to pay it back?</span>
+            <input type="text" id="years" placeholder="Enter the number of years you want to pay the loan back in" >
+            <button type="submit" class="submit" id="submit" onsubmit="calcMor()">Calculate Morgage</button>
+            
+        </div>
+
+        
+            
+            
+        </div>
+    </div>
+    </form>
+    <div class="resualt" id="resualt">
+        <h2 id="hx"></h2>
+        <p id="p2"> </p>
+        <p id="el2"> </p>
+        <p id="el3"> </p>
+    
+    
+
+
+    
+    
+</div>
+    </div>
+    
+
+
+        
+<footer>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Bakar said - Bookra Bank</p>
+    </div>
+    
+</footer>
+</body>
+<script> 
+    function toggleMenu(){
+        var nav=document.querySelector('.navBar');
+        nav.classList.toggle('responsive');
+    }</script>
+
+<script>
+    $(document).ready(function(){
+    $('#submit').click(function(event){
+        event.preventDefault();
+        var a = $("#income").val();
+        var b=$("#years").val();
+        var c=$("#houseVal").val();
+        if (a <= 0){
+            alert("the income must be entered ")
+        }
+        else if (b <=0){
+            alert("the amount of years must be entered")
+        }
+        else if (c <=0){
+            alert("the house value must be entered")
+        }
+        else {
+            c = parseInt(c)
+            b = parseInt(b)
+            a = parseInt(a)
+            var n=b*12
+            var  m= 0.045/12
+            var tp=c* m*(1+ m)**n
+            var twoMP=(1+ m)**n-1
+            var tm = tp/twoMP
+            tm=tm.toFixed(2)
+            var e=tm*30
+            var ci = 1+(0.045*b)
+            var ml=c/12
+            var mp=(c /(b*12))*ci 
+            let mps=mp.toFixed(2)
+            var tmp=mp*12*b
+            var tmps=tmp.toFixed(2)
+
+           
+           
+            $("#p2").html("Loan term in years:" + b +" years"+ "<br>" + "Monthly income: "+ "aed "+ a + "<br>" + "Loan amount:"+"aed "+ c )
+           
+           
+            if( e > a){
+                alert("The loan is not affordable and has been denied")
+                $("#el").html("not affordable, the loan has been denied ")
+                location.reload()
+            }
+            else{
+
+                alert("The loan is affordable and will be accepted")
+                $("#hx").html("Important information about your loan")
+                $("#el2").html("your monthly payments will be "+"aed "+mps +"per month")
+                $("#el3").html("your total payments will be "+"aed "+tmps)
+                $("footer").css("position", "static");
+               
+            }
+            
+
+            
+
+        }
+        
+        
+        
+
+
+    });
+});
+</script>
+
+    
+</html>
+
+ 

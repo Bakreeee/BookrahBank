@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/jquery.js"></script>
+
+
+    
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class=logo src="image/logo.png" alt="Logo"></a>
+        <h1 class="tittle">Bookra Bank</h1>
+    </header>
+    <div>
+   <nav class="navBar">
+    <span class="icon" onclick="toggleMenu()">&#9776;</span>
+    
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="service.html">Services</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+</ul>
+</nav>
+</div>
+
+<div class="serH1">
+    <h1> What do we offer?</h1>
+ </div>
+ <div class="productItemRow">
+<div class="productItem">
+    <img src="image/silverCard.jpg" alt="picture of silver credit card">
+    <h1>Silver Credit Card</h1>
+    <p>our silver credit card is for those who want to experiance the luxury of a rewards card but without the high costs associated with owning one. interested in being part of the highlife, contact us now to open a silver credit account today</p>
+    <button><a href="contact.html">Contact Us</a></button>
+</div>
+
+
+
+<div class="productItem">
+    <img src="image/goldCard.jpg" alt="picture of silver credit card"> <!--refrence: pixabay (2015) Close-up Photography Two Brown Cards, www.pexels.com. Available at: https://www.pexels.com/photo/close-up-photography-two-brown-cards-259200/. -->
+    <h1>Gold Credit Card</h1>
+<p>our gold credit card is for people who want to experiance just a little bit more then our silver card, with great benifits such as travel insurance, you can live the luxury with our gold card. contact us to open a gold credit card account.</p>  
+<button><a href="contact.html">Contact Us</a></button>
+</div>
+
+<div class="productItem">
+    <img src="image/morgage.jpg" alt="picture of a house"><!--refrence: pixabay (2016) white roll-up door
+    , www.pexels.com. Available at: https://www.pexels.com/photo/white-roll-up-door-277667/. -->
+    <h1>Mortgages </h1>
+
+    <p>our morgage plans allow people to take out a long term loan in order to buy their dream home, they offer you the flexability with morgages from 20 to 30 years depending on your income. check your elegability using our calculator below.</p>
+    <button><a href="mor.html">Morgage calculator</a></button>
+</div>
+
+<div class="productItem">
+    <img src="image/BusBank.jpg" alt="picture of a card reader">
+    <h1>Business banking</h1>
+    <p>our bank offers business solutions for small businesses who want to set a footfall in the UAE but may not be able to have the skills or requirement's needed to abide by the many rules and regulations. contact us for more information.</p>
+    <button><a href="contact.html">contact us</a></button><!--refrence: Kaboompics.com (2020) A Person Pressings on the Payment Terminal Keypad, www.pexels.com. Available at: https://www.pexels.com/photo/a-person-pressings-on-the-payment-terminal-keypad-5239804/. -->
+</div>
+</div>
+
+<footer>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Bakar said - Bookra Bank</p>
+    </div>
+    
+</footer>
+</body>
+<script> 
+    function toggleMenu(){
+        var nav=document.querySelector('.navBar');
+        nav.classList.toggle('responsive');
+    }
+    </script>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="js/jquery.js"></script>
+
+
+    
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class=logo src="image/logo.png" alt="Logo"></a>
+        <h1 class="tittle">contact page</h1>
+    </header>
+    <div>
+   <nav class="navBar">
+    
+    
+    <a class="icon" onclick="toggleMenu()">&#9776;</a>
+    
+    <ul> <li><a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a></li>
+        <a class="icon" onclick="toggleMenu()">&#9776;</a>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="service.html">Services</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+</ul>
+
+</div>
+<h1 class="contHead">Contact Page</h1>
+<section class="contPage">
+<section class="contactpage">
+    <div class="contactCont">  
+    
+    <h2>contact us</h2>
+    <p>if you have any questions or would like to find out more information about our products, feel free to contact us using the details below or use the form  to contact the customer service team directly</p>
+    
+    </div>
+
+    <div class="cont">
+        <div class="contInfo">
+            <div class="contBox">
+                <div class="icon">
+                    <div class="contText">
+                        <h3>Phones</h3>
+                        <p>+971 4 879 213</p>
+                        <h3>Email</h3>
+                        <p>support@bookraBank.com</p>
+
+                        <h3>Mail address</h3>
+                        <br>Al Nasser Building 
+                        <br> Baniyas Square 
+                        <br> Deira 
+                        <br> Dubai 
+                        <br> United Arab Emirates</p>
+                    </div>
+                </div>     
+            </div>
+</div>
+    
+</div>
+</section>
+
+
+<section class="contactform">
+   
+    
+    <form name="contactForm">
+    
+    <h1>Contact Form</h1>
+    <div class="inputBox">
+        <span>Full Name</span>
+        <input type="text" id="name" name="name" >
+        
+    </div>
+
+    <div class="inputBox">
+        <span>Email address</span>
+        <input type="text" id="email" name="email">
+        
+    </div>
+
+    <div class="inputBox">
+        <span>Phone Number</span>
+        <input type="text" id="number" name="number" >
+        
+    </div>
+
+    <div class="inputBox">
+        <span>Reason for contact</span>
+        <input type="text" id="reason" name="reason" >
+        
+    </div>
+
+    <div class="inputBox">
+        <span>Provide more information: </span>
+        <input type="text" id="moreInfo" name="moreInfo" >
+        <button type="submit" class="submit" id="submit" >Submit</button>
+    </form>
+    </div>
+</div>
+</section>
+
+
+
+</section>
+
+
+        
+<footer>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Bakar said - Bookra Bank</p>
+    </div>
+    
+</footer>
+
+
+    
+
+
+
+<script> 
+submitbtn=document.getElementById("submit")
+submitbtn.onclick = function()
+
+{
+  
+  let name = document.forms["contactForm"]["name"].value;
+  let email = document.forms["contactForm"]["email"].value;
+  let number = document.forms["contactForm"]["number"].value;
+  let reason = document.forms["contactForm"]["reason"].value;
+  let moreInfo = document.forms["contactForm"]["moreInfo"].value;
+
+
+
+  if(name ==""){
+    alert("Full name must be filed out");
+    return false;
+  } 
+
+  if(email ==""){
+    alert("email must be filed out");
+    return false;
+  } 
+
+  if(!email.includes("@")){
+    alert("email is invalid");
+    return false
+  }
+  if(!email.includes(".")){
+    alert("email is invalid");
+    return false
+  }
+  if(number ==""){
+    alert("phone number must be filed out");
+    return false;
+  } 
+  if (isNaN(number)){
+    alert("the phone number you have entered is not valid")
+  }
+
+    if(reason ==""){
+    alert("the reason must be filed out");
+    return false;
+  } 
+
+ if(moreinfo ==""){
+    alert("you need to provide some information on your query");
+    return false;
+  } 
+
+ 
+alert("Thank you for your submission. Our team will be in touch with you within 5 working days.");
+}
+    </script>
+</html>

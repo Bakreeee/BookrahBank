@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Bookra Bank</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/jquery.js"></script>
+
+      
+
+    
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class=logo src="image/logo.png" alt="Logo"></a>
+        <h1 class="tittle">Frequently asked questions</h1>
+    </header>
+    <div>
+   <nav class="navBar">
+    
+    <a class="icon" onclick="toggleMenu()">&#9776;</a>
+    
+    <ul> <li><a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="service.html">Services</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+</ul>
+</nav>
+    </div>
+
+ <section>
+    
+<div class="faqHead">
+    <h1 class="contHead"> Frequently asked questions</h1>
+    <p>below are a series of common questions of which you can look at before contacting us.</p>
+</div>
+<div class="faqBox">
+<div>
+    <button class="accordion"> Why did you call the company bookra bank</button>
+    <div class="pannel">
+        <p>this company is called bookra bank as bookra is the term used in arabic for another period of time. therefore, by naming our bank this, we believe that by providing financial services to people, we enable them to become the better people of tomorow</p>
+    </div>
+
+<button class="accordion"> Does the bank have any branches?</button>
+    <div class="pannel">
+        <p>as this bank is trying to be accesable to the people of the UAE, we have decided that it will be much better for us to be an online only bank.</p>
+    </div>
+
+<button class="accordion"> how do i contact the customer service team?</button>
+    <div class="pannel">
+<p> you can contact the customer service team using the details in the contact page.</p>    
+</div>
+</div>
+<button class="accordion"> what is the minum age to use your services?</button>
+    <div class="pannel">
+<p> as we want to comply with local laws and regulations, our minimum age for opening a credit account will be 21 years old.</p>   
+ </div>
+ <button class="accordion"> who is the founder?</button>
+    <div class="pannel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget rutrum mi, ac tempor elit. Praesent at dui pulvinar, consectetur ligula mattis, dictum libero. Fusce quis ullamcorper enim. Nullam lacinia velit mauris, a condimentum justo scelerisque tincidunt. In erat leo, posuere et lobortis vitae, finibus at metus. Nunc tempus gravida arcu a suscipit. Mauris elementum magna non ante accumsan vestibulum</p>
+    </div>
+    <button class="accordion"> what are the monthly fees?</button>
+    <div class="pannel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget rutrum mi, ac tempor elit. Praesent at dui pulvinar, consectetur ligula mattis, dictum libero. Fusce quis ullamcorper enim. Nullam lacinia velit mauris, a condimentum justo scelerisque tincidunt. In erat leo, posuere et lobortis vitae, finibus at metus. Nunc tempus gravida arcu a suscipit. Mauris elementum magna non ante accumsan vestibulum</p>
+    </div>
+    <button class="accordion"> do you have accounts for children</button>
+    <div class="pannel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget rutrum mi, ac tempor elit. Praesent at dui pulvinar, consectetur ligula mattis, dictum libero. Fusce quis ullamcorper enim. Nullam lacinia velit mauris, a condimentum justo scelerisque tincidunt. In erat leo, posuere et lobortis vitae, finibus at metus. Nunc tempus gravida arcu a suscipit. Mauris elementum magna non ante accumsan vestibulum</p>
+    </div>
+    <button class="accordion"> what currencees do you accept?</button>
+    <div class="pannel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget rutrum mi, ac tempor elit. Praesent at dui pulvinar, consectetur ligula mattis, dictum libero. Fusce quis ullamcorper enim. Nullam lacinia velit mauris, a condimentum justo scelerisque tincidunt. In erat leo, posuere et lobortis vitae, finibus at metus. Nunc tempus gravida arcu a suscipit. Mauris elementum magna non ante accumsan vestibulum</p>
+    </div>
+
+</div>
+</div>
+</section>
+
+        
+<footer>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Bakar said - Bookra Bank</p>
+    </div>
+    
+</footer>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+ 
+    this.classList.toggle("active");
+
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+} 
+</script>
+</body>
+
+
+
+    
+</html>
